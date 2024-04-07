@@ -1,0 +1,171 @@
+body{margin: 0;}
+*{
+    box-sizing: border-box;
+}
+.right-btn-container{
+    width:100%;
+    display: block;
+    font-size: 23px;
+    
+    margin: 0;
+    padding: 0;
+}
+.right-btn-container div{
+    
+    display: inline;
+    background: #f00;
+    margin:0 20px 0 20px;
+}
+#middle-side-element{
+    position: absolute;
+    display: block;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width:50%;
+    
+    height:39px;
+    border-radius: 40px;
+    padding-left:10px;
+    padding-right:4px;
+    padding-top:1px;
+    border:1px solid black;
+}
+#serbar,#middle-side-element a{
+    outline: none;
+   
+    border:none;
+}
+#serbar{
+    float:left;
+    width:calc(100% - 29px);
+    line-height: 33px;
+    font-size:14px;
+    margin:0;
+
+    color:#000;
+}
+#middle-side-element a{
+    color: #fff;
+    float:right;
+    width:29px;
+    height:29px;
+    border-radius: 50%;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    margin-top:3px;
+    
+ } 
+#middle-side-element a:hover{
+    
+    background:#e84118;
+    cursor: pointer;
+}
+
+#middle-side-element a:active{
+    
+    background:#e84118;
+}
+#side-nav{
+    position: fixed;
+    top:90px;
+    display:none;
+    left:0;
+    width:90px;
+    height:100%;
+    background: #dc143d;
+    overflow-x: hidden;
+   padding: 2px 0;
+    transition: 0.5s; 
+    text-align: center;
+}
+#side-nav a{
+    padding: 8px 14px;
+    text-decoration: none;
+    font-size:13px;
+    display: block;
+    transition: .3s;
+    /*text-align: center;*/
+    color:#000;
+    background: rgb(47, 143, 79);
+    width:100%;
+
+}
+#side-nav a:hover{
+  background: #fff;
+
+}
+#side-nav i{
+    font-size:23px;
+    cursor: pointer;
+}
+
+#side-nav span{
+    display:block;
+    font-size: 12px;
+    
+}
+.side-nav-sub{
+    width:28px;
+    height:28px;
+    border-radius: 50%;
+    margin:10px;
+}
+/*.side-nav-icon,.side-nav-sub{
+    display: block;
+    margin-left: auto;
+    margin-right:auto;
+}*/
+ /* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+  }
+  
+  /*For Tablet*/
+  @media only screen and ( min-width:600px){
+      
+    .logo-cointainer{
+        left:28px;
+    }
+    #cmp-name{
+        position: absolute;
+        display:block;
+        font-size:15px;
+        left:45px;
+        top:21.5px;
+        color:#000;
+    }
+    .right-btn-container{
+        width:100%;
+    }
+   
+  }
+  @media only screen and (min-width:768px)
+ {
+     
+     /*#top-nav{
+         height:83%;
+     }*/
+    
+   
+
+    .notification-btn{
+         
+     }
+     #side-nav{
+         top:59px;
+         width:255px;
+         text-align: left;
+         font-size :14px;
+     }
+    
+     #side-nav span{
+        display: inline;
+        font-size: 15px;
+        position: relative;
+        
+
+        margin: 0px 0px 0px 11px;
+    }
+ }

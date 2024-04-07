@@ -1,0 +1,75 @@
+<html>
+
+<head>
+    <title>Project Library</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css\indexpage.css">
+    <link rel="stylesheet" href="icon\style.css">
+    <script src="js/indexpage.js"></script>
+</head>
+
+<body>
+    <!-----Top Nav-->
+    <nav>
+
+        <div class="nav">
+            <div class="logo-cointainer" style="margin-left:5px">
+                <div class="notification-btn" onclick="togglesidenav()">
+                    <i class="veda veda-bars"></i>
+                </div>
+                <a href="index.html">
+                    <img src="pictures/logo.png" alt="Logo"></a>
+            </div>
+            <!---Sidenav-->
+           
+            <div id="right-side-element">
+                <div class="search-box">
+                    <span class="veda veda-search search-btn" style="text-decoration: none;">
+                    <input type="text" placeholder="Search" class="search-txt"></span>
+
+                </div>
+                <div class="upload notification-btn">
+                    <span class="veda veda-upload mobi"></span><span class="mob">Upload</span>
+
+                </div>
+                <div class="notification notification-btn"><span class="veda veda-bell mobi"></span><span
+                        class="mob">Notification</span>
+                </div>
+                <div class="login notification-btn">
+                    <span class="veda veda-login mobi"></span><span class="mob">Login</span>
+                </div>
+
+            </div>
+        </div>
+        <div id="left-side-element" class="toggle-btn">
+            <li class ="dnav1"> <a href=""><span class= "veda veda-home"></span> <span class="snav home">Home</span></a></li> 
+            <li class ="dnav2"> <a href=""> <span class="veda veda-trending"></span> <span class="snav trending">Trending</span></a></li> 
+            <li class ="dnav3"> <a href=""><span class= "veda veda-history"></span><span class="snav history"> History</span></a></li> 
+            <li class ="dnav4"> <a href=""><span class= "veda veda-folder"></span><span class=" snav mylibrary"> My Library</span></a></li class ="dnav">
+            <div class="more">
+                <button class="dropbtn">More
+                    
+                </button>
+                
+                </li>
+            </div>
+        </div>
+
+    </nav>
+    <script>
+        function togglesidenav() {
+            document.getElementById('side-nav').classList.toggle('active');
+            document.getElementById('main').classList.toggle('active');
+        }
+        function openser() {
+            document.getElementById('middle-side-element').style.display = 'block';
+            document.getElementById('middle-side-element').style.width = '100%';
+        }
+        function closeser() {
+            document.getElementById('middle-side-element').style.width = '0px';
+            document.getElementById('middle-side-element').style.display = 'none';
+        }
+    </script>
+</body>
+
+</html>
